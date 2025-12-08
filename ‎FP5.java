@@ -20,12 +20,3 @@ class FP5 {
 		planB = Kurs.replan(planA, "Анализ целевой аудитории", "ГЛАВА 2");
 	}
 }
-
-class  Kurs2 {
-        static List<String> replan (List <String> plan, String newChapt, String beforeChapt) {
-                int newChaptIndex = plan.indexOf(beforeChapt);
-                List<String> replanned = new ArrayList<>(plan);
-                replaned.add(newChaptIndex, newChapt);
-                return replanned;
-        }
-}
